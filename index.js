@@ -53,8 +53,9 @@ function sayGoodbye(name) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how.
 */
-function temperatureCtoF(/* code here */) {
-  /* code here */
+function temperatureCtoF(celsius) {
+  const temp = Math.ceil(celsius*9/5 + 32);
+  return temp;
 }
 
 /**
@@ -74,8 +75,12 @@ function temperatureCtoF(/* code here */) {
  *
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  const fahrenheit = temp + unit;
+  function temperatureCtoF(){
+    const celsius = Math.ceil((temp * 9/5) + 32);
+  }
+  return temperatureInF;
 }
 
 
@@ -95,8 +100,14 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+
+  const info = {
+    id: id,
+    name: name,
+    email: email
+  }
+  return info;
 }
 
 /**
@@ -112,8 +123,14 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+
+function getName(name) {
+  const yourName = {
+    id: id,
+    name: `Hello, my name is ${name}`,
+    email: email
+  }
+  return yourName;
 }
 
 
@@ -132,8 +149,11 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(fruits) {
+  const apples = [];
+
+  for (let i=0; i === apples, i++)
+    if fruits[i]
 }
 
 /**
